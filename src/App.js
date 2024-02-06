@@ -62,6 +62,7 @@ function Board({xIsNext,squares,onPlay}) {
 }
 
 export default function game() {
+
   const[history,setHistory]= useState([Array(9).fill(null)]);
   const [currenMove, setCurrenMove] = useState(0);
   const xIsNext = currenMove % 2 === 0;
